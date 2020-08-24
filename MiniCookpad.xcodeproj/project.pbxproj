@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA13831D74BFE145A65A222 /* Pods_MiniCookpad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B51621DCFBCDD7A5895BA2 /* Pods_MiniCookpad.framework */; };
+		313A9C17E65ED8BC4525E5A3 /* Pods_MiniCookpad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F690DDBE4561930CBECADD76 /* Pods_MiniCookpad.framework */; };
 		322BECF824CE712100F6A201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BECF724CE712100F6A201 /* AppDelegate.swift */; };
 		322BECFA24CE712100F6A201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BECF924CE712100F6A201 /* SceneDelegate.swift */; };
 		322BECFC24CE712100F6A201 /* RecipeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322BECFB24CE712100F6A201 /* RecipeListViewController.swift */; };
@@ -34,7 +34,9 @@
 		324435C424E2413900BD68BC /* RecipeDetailsRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324435C324E2413900BD68BC /* RecipeDetailsRecipe.swift */; };
 		324435F024E4D52600BD68BC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324435EF24E4D52600BD68BC /* SignUpViewController.swift */; };
 		324435F924EE502E00BD68BC /* FirestoreRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324435F824EE502E00BD68BC /* FirestoreRecipe.swift */; };
-		A665071A5C03DD076A859C89 /* Pods_MiniCookpadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D6198D26C4CA301B60B869 /* Pods_MiniCookpadTests.framework */; };
+		452AC8AD93EF3204CC4E0CB2 /* Pods_MiniCookpadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99DFBF99AA699C632FD25413 /* Pods_MiniCookpadTests.framework */; };
+		C129707424F3886900B48714 /* RecepiListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129707324F3886900B48714 /* RecepiListPresenterTests.swift */; };
+		C129707624F391A800B48714 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 322BED0524CE712600F6A201 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +80,13 @@
 		324435C324E2413900BD68BC /* RecipeDetailsRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsRecipe.swift; sourceTree = "<group>"; };
 		324435EF24E4D52600BD68BC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		324435F824EE502E00BD68BC /* FirestoreRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRecipe.swift; sourceTree = "<group>"; };
-		55B51621DCFBCDD7A5895BA2 /* Pods_MiniCookpad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniCookpad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABC4AA5B581FAD60590BC0C1 /* Pods-MiniCookpadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpadTests.debug.xcconfig"; path = "Target Support Files/Pods-MiniCookpadTests/Pods-MiniCookpadTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B8D6198D26C4CA301B60B869 /* Pods_MiniCookpadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniCookpadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D14337BC415AB0DED05D20CA /* Pods-MiniCookpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpad.release.xcconfig"; path = "Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad.release.xcconfig"; sourceTree = "<group>"; };
-		D85D318655A4B90127E088F6 /* Pods-MiniCookpadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpadTests.release.xcconfig"; path = "Target Support Files/Pods-MiniCookpadTests/Pods-MiniCookpadTests.release.xcconfig"; sourceTree = "<group>"; };
-		E1D8ECE7BFC64B539734D849 /* Pods-MiniCookpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpad.debug.xcconfig"; path = "Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad.debug.xcconfig"; sourceTree = "<group>"; };
+		723F009987CE59018FEFBD0E /* Pods-MiniCookpadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpadTests.debug.xcconfig"; path = "Target Support Files/Pods-MiniCookpadTests/Pods-MiniCookpadTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A3893782C7A97EF713B0951 /* Pods-MiniCookpad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpad.debug.xcconfig"; path = "Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad.debug.xcconfig"; sourceTree = "<group>"; };
+		95C39E09CEE117902297703A /* Pods-MiniCookpad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpad.release.xcconfig"; path = "Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad.release.xcconfig"; sourceTree = "<group>"; };
+		99DFBF99AA699C632FD25413 /* Pods_MiniCookpadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniCookpadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B98E002730154B04969ECF93 /* Pods-MiniCookpadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniCookpadTests.release.xcconfig"; path = "Target Support Files/Pods-MiniCookpadTests/Pods-MiniCookpadTests.release.xcconfig"; sourceTree = "<group>"; };
+		C129707324F3886900B48714 /* RecepiListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecepiListPresenterTests.swift; sourceTree = "<group>"; };
+		F690DDBE4561930CBECADD76 /* Pods_MiniCookpad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniCookpad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BA13831D74BFE145A65A222 /* Pods_MiniCookpad.framework in Frameworks */,
+				313A9C17E65ED8BC4525E5A3 /* Pods_MiniCookpad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A665071A5C03DD076A859C89 /* Pods_MiniCookpadTests.framework in Frameworks */,
+				452AC8AD93EF3204CC4E0CB2 /* Pods_MiniCookpadTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +116,7 @@
 				322BED0D24CE712700F6A201 /* MiniCookpadTests */,
 				322BECF524CE712100F6A201 /* Products */,
 				36E7E6B96C2A4DB8235EDED1 /* Pods */,
-				A11F2EF71162D3807245F2BB /* Frameworks */,
+				72341C9AAFC0471292C4B2AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				322BED0E24CE712700F6A201 /* MiniCookpadTests.swift */,
+				C129707324F3886900B48714 /* RecepiListPresenterTests.swift */,
 				322BED1024CE712700F6A201 /* Info.plist */,
 			);
 			path = MiniCookpadTests;
@@ -235,19 +239,19 @@
 		36E7E6B96C2A4DB8235EDED1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E1D8ECE7BFC64B539734D849 /* Pods-MiniCookpad.debug.xcconfig */,
-				D14337BC415AB0DED05D20CA /* Pods-MiniCookpad.release.xcconfig */,
-				ABC4AA5B581FAD60590BC0C1 /* Pods-MiniCookpadTests.debug.xcconfig */,
-				D85D318655A4B90127E088F6 /* Pods-MiniCookpadTests.release.xcconfig */,
+				7A3893782C7A97EF713B0951 /* Pods-MiniCookpad.debug.xcconfig */,
+				95C39E09CEE117902297703A /* Pods-MiniCookpad.release.xcconfig */,
+				723F009987CE59018FEFBD0E /* Pods-MiniCookpadTests.debug.xcconfig */,
+				B98E002730154B04969ECF93 /* Pods-MiniCookpadTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		A11F2EF71162D3807245F2BB /* Frameworks */ = {
+		72341C9AAFC0471292C4B2AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55B51621DCFBCDD7A5895BA2 /* Pods_MiniCookpad.framework */,
-				B8D6198D26C4CA301B60B869 /* Pods_MiniCookpadTests.framework */,
+				F690DDBE4561930CBECADD76 /* Pods_MiniCookpad.framework */,
+				99DFBF99AA699C632FD25413 /* Pods_MiniCookpadTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,11 +263,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 322BED1324CE712700F6A201 /* Build configuration list for PBXNativeTarget "MiniCookpad" */;
 			buildPhases = (
-				97300820B47495E822432987 /* [CP] Check Pods Manifest.lock */,
+				74C6CBEFDA6D0D613511C092 /* [CP] Check Pods Manifest.lock */,
 				322BECF024CE712100F6A201 /* Sources */,
 				322BECF124CE712100F6A201 /* Frameworks */,
 				322BECF224CE712100F6A201 /* Resources */,
-				EA477DD891B80D03D9C43D41 /* [CP] Embed Pods Frameworks */,
+				4A9F91E4EF225B3A04C7533D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -278,7 +282,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 322BED1624CE712700F6A201 /* Build configuration list for PBXNativeTarget "MiniCookpadTests" */;
 			buildPhases = (
-				18ADAF7C4DADF3953817D0D9 /* [CP] Check Pods Manifest.lock */,
+				87F964BDC4D0D464F81AE2B6 /* [CP] Check Pods Manifest.lock */,
 				322BED0624CE712700F6A201 /* Sources */,
 				322BED0724CE712700F6A201 /* Frameworks */,
 				322BED0824CE712700F6A201 /* Resources */,
@@ -336,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C129707624F391A800B48714 /* Info.plist in Resources */,
 				322BED0424CE712600F6A201 /* LaunchScreen.storyboard in Resources */,
 				322BED2124CE798D00F6A201 /* GoogleService-Info.plist in Resources */,
 				322BED0124CE712600F6A201 /* Assets.xcassets in Resources */,
@@ -352,29 +357,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		18ADAF7C4DADF3953817D0D9 /* [CP] Check Pods Manifest.lock */ = {
+		4A9F91E4EF225B3A04C7533D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MiniCookpadTests-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97300820B47495E822432987 /* [CP] Check Pods Manifest.lock */ = {
+		74C6CBEFDA6D0D613511C092 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -396,21 +396,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA477DD891B80D03D9C43D41 /* [CP] Embed Pods Frameworks */ = {
+		87F964BDC4D0D464F81AE2B6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MiniCookpadTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MiniCookpad/Pods-MiniCookpad-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -449,6 +454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C129707424F3886900B48714 /* RecepiListPresenterTests.swift in Sources */,
 				322BED0F24CE712700F6A201 /* MiniCookpadTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +597,7 @@
 		};
 		322BED1424CE712700F6A201 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E1D8ECE7BFC64B539734D849 /* Pods-MiniCookpad.debug.xcconfig */;
+			baseConfigurationReference = 7A3893782C7A97EF713B0951 /* Pods-MiniCookpad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -610,7 +616,7 @@
 		};
 		322BED1524CE712700F6A201 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D14337BC415AB0DED05D20CA /* Pods-MiniCookpad.release.xcconfig */;
+			baseConfigurationReference = 95C39E09CEE117902297703A /* Pods-MiniCookpad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -629,7 +635,7 @@
 		};
 		322BED1724CE712700F6A201 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ABC4AA5B581FAD60590BC0C1 /* Pods-MiniCookpadTests.debug.xcconfig */;
+			baseConfigurationReference = 723F009987CE59018FEFBD0E /* Pods-MiniCookpadTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -652,7 +658,7 @@
 		};
 		322BED1824CE712700F6A201 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D85D318655A4B90127E088F6 /* Pods-MiniCookpadTests.release.xcconfig */;
+			baseConfigurationReference = B98E002730154B04969ECF93 /* Pods-MiniCookpadTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
