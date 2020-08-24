@@ -2,6 +2,7 @@ import Firebase
 
 protocol RecipeDataStoreProtocol {
     func fetchAllRecipes(completion: @escaping ((Result<[FirestoreRecipe], Error>) -> Void))
+    func fetchRecipeDetailsBy(id: String, completion: @escaping ((Result<FirestoreRecipeDetails, Error>)) -> Void)
 }
 
 struct RecipeDataStore: RecipeDataStoreProtocol {
@@ -22,6 +23,20 @@ struct RecipeDataStore: RecipeDataStoreProtocol {
                     // mapで代替してそのままclosureに.successで渡しても良さそう <- 好み
                     .compactMap { try? $0.data(as: FirestoreRecipe.self)  }
                 completion(.success(recipe))
+            }
+        }
+    }
+    
+    func fetchRecipeDetailsBy(id: String, completion: @escaping ((Result<FirestoreRecipeDetails, Error>)) -> Void) {
+        collection.document(id).getDocument() { snapshot, error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                guard let recipeDetials = try? snapshot?.data(as: FirestoreRecipeDetails.self) else {
+                    completion(.failure(AppError()))
+                    return
+                }
+                completion(.success(recipeDetials))
             }
         }
     }

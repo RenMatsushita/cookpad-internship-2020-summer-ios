@@ -7,7 +7,7 @@ final class RecipeListWireframe: RecipeListWireframeProtocol {
     }
     
     func openRecipeDetails(recipeID: String) {
-        let vc = RecipeDetailsViewController(recipeID: recipeID)
+        let vc = RecipeDetailsViewBuilder.build(withRecipeId: recipeID)
         viewController.navigationController?.pushViewController(vc, animated: true)
     }
 }
