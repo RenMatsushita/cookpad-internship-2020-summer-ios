@@ -3,6 +3,8 @@ import Firebase
 protocol RecipeDataStoreProtocol {
     func fetchAllRecipes(completion: @escaping ((Result<[FirestoreRecipe], Error>) -> Void))
     func fetchRecipeDetailsBy(id: String, completion: @escaping ((Result<FirestoreRecipeDetails, Error>)) -> Void)
+    func createRecipe(withRecipe recipe: FirestoreRecipe, completion: @escaping ((Result<Void, Error>)) -> Void)
+     func setImage(imageData: Data, completion: @escaping ((Result<String, Error>)) -> Void)
 }
 
 struct RecipeDataStore: RecipeDataStoreProtocol {
@@ -37,6 +39,36 @@ struct RecipeDataStore: RecipeDataStoreProtocol {
                     return
                 }
                 completion(.success(recipeDetials))
+            }
+        }
+    }
+    
+    func createRecipe(withRecipe recipe: FirestoreRecipe, completion: @escaping ((Result<Void, Error>)) -> Void) {
+        _ = try! collection.addDocument(from: recipe) { error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success(()))
+            }
+        }
+    }
+    
+    /// FB Storageに画像を保存する
+    /// - Parameters:
+    ///   - imageData: 保存したい画像のData
+    ///   - completion: successの場合、ランダムに生成したfileNameがStringでかえる
+    func setImage(imageData: Data, completion: @escaping ((Result<String, Error>)) -> Void) {
+        let storageReference = Storage.storage().reference()
+        let fileName = "\(UUID()).jpg"
+        let imageRef = storageReference.child(fileName)
+        let metaData = StorageMetadata()
+        metaData.contentType = "image/jpg"
+
+        _ = imageRef.putData(imageData, metadata: metaData) { metadata, error in
+            if let error = error {
+                completion(.failure(error))
+            } else {
+                completion(.success((fileName)))
             }
         }
     }

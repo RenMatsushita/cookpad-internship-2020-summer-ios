@@ -13,7 +13,8 @@ final class RecipeListViewController: UIViewController, RecipeListViewProtocol {
         super.viewDidLoad()
         
         setUpDummyDataButton()
-
+        let postButton = UIBarButtonItem(title: "レシピ投稿する", style: .plain, target: self, action: #selector(didTapPostRecipe))
+        navigationItem.rightBarButtonItem = postButton
         title = "レシピ一覧"
         
         view = tableView
@@ -43,6 +44,10 @@ final class RecipeListViewController: UIViewController, RecipeListViewProtocol {
     @objc private func refresh() {
         refreshControl.beginRefreshing()
         presenter.refresh()
+    }
+    
+    @objc private func didTapPostRecipe() {
+        presenter.openRecipeEditor()
     }
     
     func inject(presenter: RecipeListPresenterProtocol) {

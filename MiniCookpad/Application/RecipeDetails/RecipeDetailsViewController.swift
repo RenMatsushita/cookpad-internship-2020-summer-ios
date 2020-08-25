@@ -81,7 +81,7 @@ final class RecipeDetailsViewController: UIViewController, RecipeDetailsViewProt
     }
 
     func showRecipe(with recipeDetails: RecipeDetails) {
-        navigationController?.navigationItem.title = recipeDetails.title
+        title = recipeDetails.title
         titleLabel.text = recipeDetails.title
 
         let placeholderImage = UIImage(systemName: "photo")

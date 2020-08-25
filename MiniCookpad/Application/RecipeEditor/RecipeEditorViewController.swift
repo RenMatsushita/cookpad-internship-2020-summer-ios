@@ -2,15 +2,15 @@ import Foundation
 import UIKit
 import Photos
 
-class RecipeEditorViewController: UIViewController {
+class RecipeEditorViewController: UIViewController, RecipeEditorViewProtocol {
     private let recipeImageView = UIImageView()
     private let titleFieldView = UITextField()
     private let stepsView = StepsView()
     private var postImage: UIImage?
+    private var presenter: RecipeEditorPresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "投稿する", style: .plain, target: self, action: #selector(tapPost))
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "閉じる", style: .plain, target: self, action: #selector(tapClose))
 
@@ -82,10 +82,10 @@ class RecipeEditorViewController: UIViewController {
     }
 
     @objc private func tapPost() {
-//        let title = titleFieldView.text
-//        let steps = stepsView.getSteps()
-//        let image = postImage
-        // TODO: レシピ作成
+        let title = titleFieldView.text
+        let steps = stepsView.getSteps()
+        let image = postImage
+        presenter.didTapPost(title: title, steps: steps, image: image)
     }
 
     @objc private func tapClose() {
@@ -102,7 +102,7 @@ class RecipeEditorViewController: UIViewController {
     }
 
     // データの登録などのエラーがあった際に呼ぶ
-    func showError(_ error: Error) {
+    func showError(wirh error: Error) {
         let alertController = UIAlertController(title: "エラー", message: error.localizedDescription, preferredStyle: .alert)
         let closeAction = UIAlertAction(title: "閉じる", style: .default)
         alertController.addAction(closeAction)
@@ -157,6 +157,10 @@ class RecipeEditorViewController: UIViewController {
         let picker = UIImagePickerController()
         picker.delegate = self
         present(picker, animated: true)
+    }
+    
+    func inject(presenter: RecipeEditorPresenterProtocol) {
+        self.presenter = presenter
     }
 }
 
