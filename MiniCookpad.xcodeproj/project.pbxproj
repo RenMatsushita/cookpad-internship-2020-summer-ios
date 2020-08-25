@@ -39,6 +39,7 @@
 		C162364E24F4A26000AEC58C /* RecipeEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162364D24F4A26000AEC58C /* RecipeEditorPresenter.swift */; };
 		C162365024F4A27B00AEC58C /* RecipeEditorViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162364F24F4A27B00AEC58C /* RecipeEditorViewBuilder.swift */; };
 		C162365224F4A29500AEC58C /* RecipeEditorWIreframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162365124F4A29500AEC58C /* RecipeEditorWIreframe.swift */; };
+		C162365424F4B11A00AEC58C /* RecipeEditorInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C162365324F4B11A00AEC58C /* RecipeEditorInteractorTests.swift */; };
 		C1A6E6B124F3A2F200C80BAF /* FirestoreRecipeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6E6B024F3A2F200C80BAF /* FirestoreRecipeDetail.swift */; };
 		C1A6E6B324F3A77B00C80BAF /* RecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6E6B224F3A77B00C80BAF /* RecipeDetails.swift */; };
 		C1A6E6B524F3A95B00C80BAF /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A6E6B424F3A95B00C80BAF /* AppError.swift */; };
@@ -96,6 +97,7 @@
 		C162364D24F4A26000AEC58C /* RecipeEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditorPresenter.swift; sourceTree = "<group>"; };
 		C162364F24F4A27B00AEC58C /* RecipeEditorViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditorViewBuilder.swift; sourceTree = "<group>"; };
 		C162365124F4A29500AEC58C /* RecipeEditorWIreframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditorWIreframe.swift; sourceTree = "<group>"; };
+		C162365324F4B11A00AEC58C /* RecipeEditorInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeEditorInteractorTests.swift; sourceTree = "<group>"; };
 		C1A6E6B024F3A2F200C80BAF /* FirestoreRecipeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreRecipeDetail.swift; sourceTree = "<group>"; };
 		C1A6E6B224F3A77B00C80BAF /* RecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetails.swift; sourceTree = "<group>"; };
 		C1A6E6B424F3A95B00C80BAF /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				322BED0E24CE712700F6A201 /* MiniCookpadTests.swift */,
 				C129707324F3886900B48714 /* RecepiListPresenterTests.swift */,
 				322BED1024CE712700F6A201 /* Info.plist */,
+				C162365324F4B11A00AEC58C /* RecipeEditorInteractorTests.swift */,
 			);
 			path = MiniCookpadTests;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 			files = (
 				C129707424F3886900B48714 /* RecepiListPresenterTests.swift in Sources */,
 				322BED0F24CE712700F6A201 /* MiniCookpadTests.swift in Sources */,
+				C162365424F4B11A00AEC58C /* RecipeEditorInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
